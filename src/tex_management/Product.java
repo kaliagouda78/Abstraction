@@ -7,15 +7,15 @@ private String catagory;
 protected Product(String name, double price, String catagory) {
 	super();
 	if(price<=0) {
-		System.out.println("Price cannot be negative.");
+		System.err.println("Price cannot be negative.");
 		System.exit(0);
 	}
 	if(name==null||name.isEmpty()||name.equals(null)) {
-		System.out.println("name cannot be empty or null.");
+		System.err.println("name cannot be empty or null.");
 		System.exit(0);
 	}
 	if(catagory==null||catagory.isEmpty()||catagory.equals(null)) {
-		System.out.println("catagory cannot be empty or null.");
+		System.err.println("catagory cannot be empty or null.");
 		System.exit(0);
 	}
 	this.name = name;
